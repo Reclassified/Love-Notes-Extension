@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Love Notes for My Girlfriend",
+  "version": "1.0",
+  "description": "Shows sweet love notes as notifications",
+  "permissions": ["storage", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "💝 Love Notes"
+  },
+  "icons": {
+    "48": "icon48.jpg"
+  }
+} 
