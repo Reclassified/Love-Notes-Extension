@@ -98,6 +98,7 @@ function getTimeBasedNote() {
     } else if (hour >= 17 && hour < 22) {
         return eveningNotes[Math.floor(Math.random() * eveningNotes.length)];
     } else {
+        // Late night/early morning - use general notes
         return generalNotes[Math.floor(Math.random() * generalNotes.length)];
     }
 }
@@ -117,12 +118,25 @@ function showRandomNote() {
     });
 }
 
+// Show a note when the extension icon is clicked
 chrome.action.onClicked.addListener(() => {
     showRandomNote();
 });
 
-setInterval(showRandomNote, 10 * 60 * 1000);
+// Set up alarm to show notes every 10 minutes
+chrome.alarms.create('loveNote', {
+    delayInMinutes: 1, // Show first note after 1 minute
+    periodInMinutes: 10 // Then every 10 minutes
+});
 
+// Handle alarm to show notes
+chrome.alarms.onAlarm.addListener((alarm) => {
+    if (alarm.name === 'loveNote') {
+        showRandomNote();
+    }
+});
+
+// Show first note when extension is installed
 chrome.runtime.onInstalled.addListener(() => {
     showRandomNote();
 }); 

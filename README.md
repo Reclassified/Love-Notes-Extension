@@ -62,4 +62,4 @@ You can customize the extension by editing the `background.js` file:
 
 ## Note
 
-The extension requires an icon file (`icon48.jpg`) to display notifications properly. 
+The extension requires an icon file (`icon48.jpg`) to display notifications properly.
