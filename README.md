@@ -60,7 +60,7 @@ You can customize the extension by editing the `background.js` file:
 - Modify the time periods for different messages
 - Add new notification titles
 
-## Note
+## Note 
 
 The extension requires an icon file (`icon48.jpg`) to display notifications properly.
 
