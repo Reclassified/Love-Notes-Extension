@@ -113,8 +113,7 @@ function showRandomNote() {
         iconUrl: 'icon48.jpg',
         title: title,
         message: note,
-        priority: 2,
-        requireInteraction: true
+        priority: 2
     });
 }
 
