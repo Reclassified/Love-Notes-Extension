@@ -66,3 +66,4 @@ The extension requires an icon file (`icon48.jpg`) to display notifications prop
 
 ---
 *This commit is signed with GPG for verification.*
+*Made with love by Reclassified 💝*
