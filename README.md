@@ -58,7 +58,7 @@ You can customize the extension by editing the `background.js` file:
 - Add your own love notes to any time period
 - Change the notification frequency
 - Modify the time periods for different messages
-- Add new notification titles
+- Add new notification titles 
 
 ## Note 
 
